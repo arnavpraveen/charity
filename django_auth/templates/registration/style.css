@@ -1,0 +1,157 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.brand-wrapper {
+padding-top: 0px;
+padding-bottom: 100px;
+text-align: center;
+}
+
+.brand-wrapper .logo-account {
+height: 50px; }
+
+.container-fluid {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    height: 100vh; /* Set height to 100vh for the row */
+}
+
+.form-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.image-container-login {
+    flex: 1;
+    background: linear-gradient(212.38deg, rgba(242, 57, 127, 0.7) 0%, rgba(175, 70, 189, 0.71) 100%),url('image/login-image2.jpg') center/cover no-repeat; /* Replace 'your-image-url.jpg' with your image URL */
+    height: 100%;
+}
+
+.image-container-register {
+    flex: 1;
+    background: url('image/login-image-lamp.jpg') center/cover no-repeat; /* Replace 'your-image-url.jpg' with your image URL */
+    height: 100%;
+}
+
+form {
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #e7e7e7;
+    border-radius: 0;
+    padding: 9px 5px;
+    min-height: 40px;
+}
+
+.login-btn {
+padding: 13px 20px;
+background-color: #583672;
+border-radius: 0;
+font-size: 20px;
+font-weight: bold;
+color: #fff;
+margin-bottom: 28px; 
+width: 100%;
+}
+
+.login-btn:hover {
+border: 1px solid #583672;
+background-color: #fff;
+color: #583672; }
+
+.register-btn {
+padding: 13px 20px;
+background-color: #fdbb28;
+border-radius: 0;
+font-size: 20px;
+font-weight: bold;
+color: #fff;
+margin-bottom: 28px; 
+width: 100%;
+}
+
+.register-btn:hover {
+border: 1px solid #fdbb28;
+background-color: #fff;
+color: #fdbb28; }
+
+.forgot-password {
+    text-align: right;
+    color: #080808;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 20px; }
+
+
+.have-an-account {
+    text-align: center;
+    color: #080808;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 54px; }
+
+
+.account-question {
+    text-align: center;
+    margin-top: 40px;
+font-size: 14px;
+    color: #080808;
+}
+
+.terms {
+    text-align: center;
+font-size: 14px;
+    color: #080808;
+position: absolute;
+bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .image-container-login {
+        display: none;
+    }
+    .image-container-register {
+        display: none;
+    }
+
+    .form-container {
+        flex: 12;
+    }
+}
